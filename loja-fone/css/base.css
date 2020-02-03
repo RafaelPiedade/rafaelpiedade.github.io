@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(37, 42, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 42, 52, 1) 0%,
+    rgba(255, 46, 99, 1) 100%
+  );
+}
+
+
+@media (max-width: 355px){
+  body{
+    overflow-x: hidden;
+  }
+}

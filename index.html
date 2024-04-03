@@ -1,12 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafael Piedade</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="scroll-smooth">
+    <!-- header -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between items-center h-full">
+        <!-- logo -->
+        <a class="cursor-pointer font-bold" onclick="scrollFor('hero')">rafael.dev</a>
+        <!-- nav -->
+        <nav>
+          <!-- nav mobile trigger -->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed h-0 p-0 w-full bg-white overflow-hidden border-t top-[90px] left-0 ring-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li>
+              <a class="cursor-pointer" onclick="scrollFor('about')">Sobre</a>
+            </li>
+            <li><a class="cursor-pointer" onclick="scrollFor('project')">Projetos</a></li>
+            <li><a class="cursor-pointer" onclick="scrollFor('contact')">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- page wrapper -->
+    <main>
+      <!-- hero -->
+      <section class="hero relative mt-[80px] z-20" id="hero">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- text -->
+          <div class="hero-text w-[600px]">
+            <span class="font-secondary tracking-[.4em] text-accent"
+              >web developer</span
+            >
+            <h1 class="h1 mb-8">
+              <span class="font-bold font-secondary text-accent2"
+                >Rafael Piedade</span
+              >
+            </h1>
+            <p class="mb-8">
+              Bem-vindo ao meu portfólio! Aqui, convido você a embarcar na minha
+              jornada e descobrir os projetos que dão vida às minhas ideias.
+            </p>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/rafael-rosa-piedade/"
+                target="_blank"
+                title="Linkedin"
+                ><i
+                  class="ri-linkedin-box-fill text-4xl text-blue-600 hover:text-blue-700"
+                ></i
+              ></a>
+              <a
+                class="ml-5"
+                href="https://github.com/RafaelPiedade"
+                target="_blank"
+                title="Github"
+                ><i class="ri-github-fill text-4xl"></i
+              ></a>
+            </div>
+          </div>
+          <div class="w-0 overflow-hidden lg:w-auto">
+            <img class="max-h-[400px]" src="./image/hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- works -->
+      <section class="works mt-[150px]">
+        <div class="container mx-auto">
+          <!-- <h1 class="h1 text-center mb-12">Meus Trabalhos</h1> -->
+          <!-- grid items -->
+          <div class="grid grid-cols-1 gap-9 xl:grid-cols-2">
+            <!-- item 1 -->
+            <div class="text-center">
+              <div class="mb-4">
+                <i class="ri-magic-line text-6xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Web Design</h3>
+              <p class="max-w-md mx-auto">
+                Conceitualizando a arte da web, uma página de cada vez.
+                Transformando ideias em experiências visuais cativantes,
+                moldando o futuro digital.
+              </p>
+            </div>
+            <!-- item 2 -->
+            <div class="text-center">
+              <div class="mb-4">
+                <i class="ri-compasses-2-line text-6xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Web Developer</h3>
+              <p class="max-w-md mx-auto">
+                Transformando linhas de código em experiências digitais.
+                Construindo o futuro da web com cada função, cada linha de
+                código.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section class="about mt-[150px]" id="about">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-30 xl:grid-cols-2">
+            <!-- Carreia -->
+            <div class="career mb-[150px]">
+              <h2 class="h2 mb-[80px] text-center">Carreira</h2>
+              <div>
+                <div>
+                  <h4 class="h4 m-0">Desenvolvedor Backend</h4>
+                  <a href="https://www.se7i.com.br/" target="_blank"
+                    >SE7I - Solções Esepcias em Tecnologia da Informação</a
+                  ><span> • Assis/SP</span>
+                  <p class="opacity-65 text-base">
+                    Jul 2019 – Out 2023 • 4 anos 4 meses
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Habilidades -->
+            <div class="skils">
+              <h2 class="h2 mb-[80px] text-center">Habilidades</h2>
+              <ul>
+                <li>
+                  <div
+                    class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500"
+                  >
+                    Backend
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                  >
+                    <div
+                      class="bg-yellow-400 h-2.5 rounded-full"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500"
+                  >
+                    Frontend
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                  >
+                    <div
+                      class="bg-yellow-400 h-2.5 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500"
+                  >
+                    UX / UI
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                  >
+                    <div
+                      class="bg-yellow-400 h-2.5 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500"
+                  >
+                    Design Gráfico
+                  </div>
+                  <div
+                    class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                  >
+                    <div
+                      class="bg-yellow-400 h-2.5 rounded-full"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="project mt-[150px]" id="project">
+        <div class="container mx-auto">
+          <div class="text-center mb-[60px]">
+            <h2 class="h2 mb-4">Meus Projetos</h2>
+            <p>Explore meus projetos e descubra o que me faz vibrar.</p>
+          </div>
+          <!-- grid -->
+          <div
+            class="project__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- item -->
+            <div class="project__item mx-auto shadow-md max-w-[548px] h-full">
+              <img src="./image/project_1.png" alt="" />
+              <div class="p-3">
+                <div class="flex justify-between items-center">
+                  <h3 class="h3 font-secondary font-bold">Loja fone</h3>
+                  <a
+                    class="text-center cursor-pointer"
+                    href="./loja-fone"
+                    target="_blank"
+                    >Preview <i class="ri-arrow-right-line"></i
+                  ></a>
+                </div>
+                <p>Landing Page de um produto, com responsividade.</p>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <i class="ri-html5-fill text-orange-500" title="HTML5"></i>
+                    <i class="ri-css3-fill text-blue-500" title="CSS"></i>
+                    <i
+                      class="ri-javascript-fill text-yellow-400"
+                      title="JavaScript"
+                    ></i>
+                  </div>
+                  <a
+                    href="https://github.com/RafaelPiedade/loja-fone"
+                    target="_blank"
+                    title="Access Project"
+                    ><i class="ri-github-fill text-3xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <div
+              class="project__item shadow-md w-full max-w-[548px] h-full mx-auto"
+            >
+              <img class="mx-auto" src="./image/project_fix.png" alt="" />
+              <div class="p-3">
+                <div class="flex justify-between items-center">
+                  <h3 class="h3 font-secondary font-bold">TO-DO List</h3>
+                  <a class="text-center cursor-pointer"
+                    >Preview <i class="ri-arrow-right-line"></i
+                  ></a>
+                </div>
+                <p>
+                  Lista de taras, explorando os hooks do React e API Rest (2019)
+                </p>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <i
+                      class="ri-reactjs-line text-blue-500"
+                      title="ReactJS"
+                    ></i>
+                    <i class="ri-nodejs-line text-green-500" title="NodeJS"></i>
+                  </div>
+                  <a href="" title="Access Project"
+                    ><i class="ri-github-fill text-3xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20" id="contact">
+        <div>
+          <div
+            class="footer__item w-full max-w-[400px] mx-auto mb-8 xl:text-left"
+          >
+            <!-- logo -->
+            <p class="mb-8 text-xl mx-auto text-center">
+              Entre em contato comigo!
+            </p>
+            <!-- socials -->
+            <ul
+              class="text-primary flex gap-[54px] justify-center xl:justify-between"
+            >
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rafael-rosa-piedade/"
+                  target="_blank"
+                  title="Linkedin"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RafaelPiedade"
+                  target="_blank"
+                  title="Github"
+                  ><i class="ri-github-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:rafaeldade@hotmail.com">
+                  <i class="ri-mail-line"> rafaeldade@hotmail.com</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <p
+          class="footer__copyright text-center text-lg py-10 bg-white xl:border-t"
+        >
+          Copyright &copy; Rafael Piedade 2024. All right reserved.
+        </p>
+      </footer>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
